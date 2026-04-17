@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harbour Line | Mumbai Transit Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="line-page" data-line="harbour">
+    <header class="site-header">
+        <nav class="nav-shell">
+            <a class="brand" href="index.html">Mumbai Transit Hub</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="western.html">Western</a>
+                <a href="central.html">Central</a>
+                <a href="harbour.html" class="is-active">Harbour</a>
+                <a href="metro.html">Metro</a>
+                <a href="map.html">Map</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="page-hero accent-harbour">
+            <p class="eyebrow">Mumbai Local Services</p>
+            <h1>Harbour Line</h1>
+            <p class="hero-text">Search trains and generate a ticket.</p>
+        </section>
+
+        <section class="section-shell section-alt">
+            <article class="info-card planner-card">
+                <div class="section-heading compact-heading">
+                    <p class="eyebrow">Journey Search</p>
+                    <h2>Find and book</h2>
+                </div>
+
+                <form id="journey-planner" class="planner-form">
+                    <label for="source-station">Source station</label>
+                    <select id="source-station" name="source"></select>
+
+                    <label for="destination-station">Destination station</label>
+                    <select id="destination-station" name="destination"></select>
+
+                    <label for="travel-after">Search trains after</label>
+                    <input id="travel-after" name="travelAfter" type="time">
+
+                    <div class="form-actions">
+                        <button type="submit" class="button button-primary">Find Next Trains</button>
+                        <button type="button" class="button button-secondary" id="swap-stations">Swap Stations</button>
+                    </div>
+                </form>
+
+                <div id="planner-feedback" class="planner-feedback"></div>
+                <div id="planner-results" class="result-stack"></div>
+
+                <section id="booking-section" class="booking-panel">
+                    <div class="section-heading compact-heading">
+                        <p class="eyebrow">Ticket Booking</p>
+                        <h2>Book your journey</h2>
+                    </div>
+
+                    <div id="selected-train-summary" class="selected-train-summary">
+                        Search trains and select one service to continue with ticket booking.
+                    </div>
+
+                    <form id="ticket-form" class="planner-form booking-form">
+                        <label for="traveller-count">Number of travelers</label>
+                        <input id="traveller-count" name="travellers" type="number" min="1" max="6" value="1">
+
+                        <fieldset class="class-fieldset">
+                            <legend>Travel class</legend>
+                            <div id="class-options" class="class-options"></div>
+                        </fieldset>
+
+                        <div class="form-actions">
+                            <button type="submit" class="button button-primary">Generate Ticket</button>
+                        </div>
+                    </form>
+
+                    <div id="ticket-feedback" class="planner-feedback"></div>
+                    <div id="ticket-output" class="ticket-output"></div>
+                </section>
+            </article>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-card">
+            <p class="footer-label">WD MINI PROJECT</p>
+            <div class="footer-team">
+                <p>N007 BRUCE ANDRADES</p>
+                <p>N015 HARSHIL BHATNAGAR</p>
+                <p>N031 DHRUV DHONDE</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="train-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
