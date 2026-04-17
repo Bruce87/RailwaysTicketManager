@@ -197,4 +197,4 @@ if (require.main === module) {
     startServer();
 }
 
-module.exports = { parseCsvRow, readTrainData, server, startServer };
+module.exports = server;
