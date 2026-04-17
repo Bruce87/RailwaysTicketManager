@@ -1,9 +1,0 @@
-{
-    "name": "mumbai-transit-hub",
-    "version": "1.0.0",
-    "private": true,
-    "description": "Mumbai Transit Hub mini project with a simple Node.js CSV backend",
-    "scripts": {
-        "start": "node server.js"
-    }
-}
