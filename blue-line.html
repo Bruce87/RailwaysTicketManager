@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Line 1 | Mumbai Transit Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="metro-line-page" data-metro-line="blue1">
+    <header class="site-header">
+        <nav class="nav-shell">
+            <a class="brand" href="index.html">Mumbai Transit Hub</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="western.html">Western</a>
+                <a href="central.html">Central</a>
+                <a href="harbour.html">Harbour</a>
+                <a href="metro.html" class="is-active">Metro</a>
+                <a href="map.html">Map</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="page-hero accent-map">
+            <p class="eyebrow">Metro Line Details</p>
+            <h1>Blue Line (Line 1)</h1>
+            <p class="hero-text">
+                Blue Line 1 connects Versova to Ghatkopar and serves as a strong east-west metro corridor
+                across Mumbai with important rail and metro interchanges.
+            </p>
+            <div class="hero-badges">
+                <span>12 stations</span>
+                <span>Elevated alignment</span>
+                <span>Opened on 8 June 2014</span>
+            </div>
+        </section>
+
+        <section class="content-grid">
+            <article class="info-card">
+                <div class="section-heading compact-heading">
+                    <p class="eyebrow">Line Highlights</p>
+                    <h2>Route information</h2>
+                </div>
+                <ul class="feature-list">
+                    <li>Runs from Versova to Ghatkopar</li>
+                    <li>Important interchanges at Andheri, Western Express Highway, Marol Naka, and Ghatkopar</li>
+                    <li>Strengthens east-west travel across the city</li>
+                </ul>
+            </article>
+
+            <article class="info-card">
+                <div class="section-heading compact-heading">
+                    <p class="eyebrow">Ticket Booking</p>
+                    <h2>Book metro tickets</h2>
+                </div>
+                <form id="metro-booking-form" class="planner-form">
+                    <label for="metro-source-station">Source station</label>
+                    <select id="metro-source-station" name="source"></select>
+
+                    <label for="metro-destination-station">Destination station</label>
+                    <select id="metro-destination-station" name="destination"></select>
+
+                    <label for="metro-traveller-count">Number of travelers</label>
+                    <input id="metro-traveller-count" name="travellers" type="number" min="1" max="6" value="1">
+
+                    <fieldset class="class-fieldset">
+                        <legend>Ticket type</legend>
+                        <div class="class-options">
+                            <label class="class-choice">
+                                <input type="radio" name="metro-ticket-type" value="Single Journey" checked>
+                                <span>Single Journey</span>
+                            </label>
+                            <label class="class-choice">
+                                <input type="radio" name="metro-ticket-type" value="Return Journey">
+                                <span>Return Journey</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <button type="submit" class="button button-primary">Generate Metro Ticket</button>
+                    </div>
+                </form>
+
+                <div id="metro-ticket-feedback" class="planner-feedback"></div>
+                <div id="metro-ticket-output" class="ticket-output"></div>
+            </article>
+        </section>
+
+        <section class="metro-line-section">
+            <div class="metro-line-header">
+                <div>
+                    <p class="eyebrow">Station List</p>
+                    <h2>Blue Line 1 stations</h2>
+                </div>
+            </div>
+
+            <div class="station-table-wrap">
+                <table class="station-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Station</th>
+                            <th>Interchange</th>
+                            <th>Opened</th>
+                            <th>Alignment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Versova</td><td>-</td><td>8 June 2014</td><td>Elevated</td></tr>
+                        <tr><td>2</td><td>D N Nagar</td><td><span class="metro-badge badge-yellow">Yellow Line</span></td><td>8 June 2014</td><td>Elevated</td></tr>
+                        <tr><td>3</td><td>Azad Nagar</td><td>-</td><td>8 June 2014</td><td>Elevated</td></tr>
+                        <tr><td>4</td><td>Andheri</td><td class="interchange-stack"><span class="metro-badge badge-western">Western</span><span class="metro-badge badge-harbour">Harbour</span></td><td>8 June 2014</td><td>Elevated</td></tr>
+                        <tr><td>5</td><td>Western Express Highway</td><td><span class="metro-badge badge-red">Red Line</span></td><td>8 June 2014</td><td>Elevated</td></tr>
+                        <tr><td>6</td><td>Chakala (J. B. Nagar)</td><td>-</td><td>8 June 2014</td><td>Elevated</td></tr>
+                        <tr><td>7</td><td>Airport Road</td><td>-</td><td>8 June 2014</td><td>Elevated</td></tr>
+                        <tr><td>8</td><td>Marol Naka</td><td><span class="metro-badge badge-aqua">Aqua Line</span></td><td>8 June 2014</td><td>Elevated</td></tr>
+                        <tr><td>9</td><td>Saki Naka</td><td>-</td><td>8 June 2014</td><td>Elevated</td></tr>
+                        <tr><td>10</td><td>Asalpha</td><td>-</td><td>8 June 2014</td><td>Elevated</td></tr>
+                        <tr><td>11</td><td>Jagruti Nagar</td><td>-</td><td>8 June 2014</td><td>Elevated</td></tr>
+                        <tr><td>12</td><td>Ghatkopar</td><td class="interchange-stack"><span class="metro-badge badge-central">Central</span><span class="metro-badge badge-green">Green Line (Under construction)</span></td><td>8 June 2014</td><td>Elevated</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-card">
+            <p class="footer-label">WD MINI PROJECT</p>
+            <div class="footer-team">
+                <p>N007 BRUCE ANDRADES</p>
+                <p>N015 HARSHIL BHATNAGAR</p>
+                <p>N031 DHRUV DHONDE</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="metro-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqua Line 3 | Mumbai Transit Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="metro-line-page" data-metro-line="aqua3">
+    <header class="site-header">
+        <nav class="nav-shell">
+            <a class="brand" href="index.html">Mumbai Transit Hub</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="western.html">Western</a>
+                <a href="central.html">Central</a>
+                <a href="harbour.html">Harbour</a>
+                <a href="metro.html" class="is-active">Metro</a>
+                <a href="map.html">Map</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="page-hero accent-map">
+            <p class="eyebrow">Metro Line Details</p>
+            <h1>Aqua Line (Line 3)</h1>
+            <p class="hero-text">
+                Aqua Line 3 connects Aarey JVLR to Cuffe Parade and brings fast north-to-south metro travel
+                through airport corridors, central Mumbai, and south Mumbai.
+            </p>
+            <div class="hero-badges">
+                <span>27 stations</span>
+                <span>Mainly underground corridor</span>
+                <span>Airport and city-core connectivity</span>
+            </div>
+        </section>
+
+        <section class="content-grid">
+            <article class="info-card">
+                <div class="section-heading compact-heading">
+                    <p class="eyebrow">Line Highlights</p>
+                    <h2>Route information</h2>
+                </div>
+                <ul class="feature-list">
+                    <li>Runs from Aarey JVLR to Cuffe Parade</li>
+                    <li>Connects airport terminals, Bandra Kurla Complex, Dadar, CSMT, and Churchgate</li>
+                    <li>Offers strong interchange access with suburban rail and other metro corridors</li>
+                </ul>
+            </article>
+
+            <article class="info-card">
+                <div class="section-heading compact-heading">
+                    <p class="eyebrow">Ticket Booking</p>
+                    <h2>Book metro tickets</h2>
+                </div>
+                <form id="metro-booking-form" class="planner-form">
+                    <label for="metro-source-station">Source station</label>
+                    <select id="metro-source-station" name="source"></select>
+
+                    <label for="metro-destination-station">Destination station</label>
+                    <select id="metro-destination-station" name="destination"></select>
+
+                    <label for="metro-traveller-count">Number of travelers</label>
+                    <input id="metro-traveller-count" name="travellers" type="number" min="1" max="6" value="1">
+
+                    <fieldset class="class-fieldset">
+                        <legend>Ticket type</legend>
+                        <div class="class-options">
+                            <label class="class-choice">
+                                <input type="radio" name="metro-ticket-type" value="Single Journey" checked>
+                                <span>Single Journey</span>
+                            </label>
+                            <label class="class-choice">
+                                <input type="radio" name="metro-ticket-type" value="Return Journey">
+                                <span>Return Journey</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <button type="submit" class="button button-primary">Generate Metro Ticket</button>
+                    </div>
+                </form>
+
+                <div id="metro-ticket-feedback" class="planner-feedback"></div>
+                <div id="metro-ticket-output" class="ticket-output"></div>
+            </article>
+        </section>
+
+        <section class="metro-line-section">
+            <div class="metro-line-header">
+                <div>
+                    <p class="eyebrow">Station List</p>
+                    <h2>Aqua Line 3 stations</h2>
+                </div>
+                <div class="metro-facts">
+                    <span>Opened in phases from October 2024 to October 2025</span>
+                    <span>At-grade and underground sections</span>
+                </div>
+            </div>
+
+            <div class="station-table-wrap">
+                <table class="station-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Station</th>
+                            <th>Interchange</th>
+                            <th>Opened</th>
+                            <th>Alignment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Aarey JVLR</td><td><span class="metro-badge badge-pink">Pink Line 6 (Under construction)</span></td><td>7 October 2024</td><td>At-grade</td></tr>
+                        <tr><td>2</td><td>SEEPZ</td><td>-</td><td>7 October 2024</td><td>Underground</td></tr>
+                        <tr><td>3</td><td>MIDC - Andheri</td><td>-</td><td>7 October 2024</td><td>Underground</td></tr>
+                        <tr><td>4</td><td>Marol Naka</td><td><span class="metro-badge badge-blue">Blue Line 1</span></td><td>7 October 2024</td><td>Underground</td></tr>
+                        <tr><td>5</td><td>Chhatrapati Shivaji Maharaj International Airport - T2</td><td class="interchange-stack"><span class="metro-badge badge-red">Red Line 7A (Under construction)</span><span class="metro-badge badge-gold">Gold Line 8 (Proposed)</span></td><td>7 October 2024</td><td>Underground</td></tr>
+                        <tr><td>6</td><td>Sahar Road</td><td>-</td><td>7 October 2024</td><td>Underground</td></tr>
+                        <tr><td>7</td><td>Chhatrapati Shivaji Maharaj International Airport - T1</td><td>-</td><td>7 October 2024</td><td>Underground</td></tr>
+                        <tr><td>8</td><td>Santacruz</td><td class="interchange-stack"><span class="metro-badge badge-western">Western</span><span class="metro-badge badge-harbour">Harbour</span></td><td>7 October 2024</td><td>Underground</td></tr>
+                        <tr><td>9</td><td>Bandra Colony</td><td>-</td><td>7 October 2024</td><td>Underground</td></tr>
+                        <tr><td>10</td><td>Bandra Kurla Complex</td><td><span class="metro-badge badge-yellow">Yellow Line 2B (Under construction)</span></td><td>7 October 2024</td><td>Underground</td></tr>
+                        <tr><td>11</td><td>Dharavi</td><td>-</td><td>10 May 2025</td><td>Underground</td></tr>
+                        <tr><td>12</td><td>Shitaladevi Mandir</td><td>-</td><td>10 May 2025</td><td>Underground</td></tr>
+                        <tr><td>13</td><td>Dadar</td><td class="interchange-stack"><span class="metro-badge badge-western">Western</span><span class="metro-badge badge-central">Central</span><span class="metro-badge badge-railway">Indian Railways</span></td><td>10 May 2025</td><td>Underground</td></tr>
+                        <tr><td>14</td><td>Siddhivinayak</td><td>-</td><td>10 May 2025</td><td>Underground</td></tr>
+                        <tr><td>15</td><td>Worli</td><td>-</td><td>10 May 2025</td><td>Underground</td></tr>
+                        <tr><td>16</td><td>Acharya Atre Chowk</td><td>-</td><td>10 May 2025</td><td>Underground</td></tr>
+                        <tr><td>17</td><td>Science Centre</td><td>-</td><td>9 October 2025</td><td>Underground</td></tr>
+                        <tr><td>18</td><td>Mahalaxmi</td><td class="interchange-stack"><span class="metro-badge badge-western">Western</span><span class="metro-badge badge-chembur">Sant Gadge Maharaj Chowk</span></td><td>9 October 2025</td><td>Underground</td></tr>
+                        <tr><td>19</td><td>Jagannath Shankar Sheth</td><td class="interchange-stack"><span class="metro-badge badge-western">Western</span><span class="metro-badge badge-railway">Indian Railways</span></td><td>9 October 2025</td><td>Underground</td></tr>
+                        <tr><td>20</td><td>Grant Road</td><td><span class="metro-badge badge-western">Western</span></td><td>9 October 2025</td><td>Underground</td></tr>
+                        <tr><td>21</td><td>Girgaon</td><td>-</td><td>9 October 2025</td><td>Underground</td></tr>
+                        <tr><td>22</td><td>Kalbadevi</td><td>-</td><td>9 October 2025</td><td>Underground</td></tr>
+                        <tr><td>23</td><td>Chhatrapati Shivaji Maharaj Terminus</td><td class="interchange-stack"><span class="metro-badge badge-green">Green Line 11 (Proposed)</span><span class="metro-badge badge-central">Central</span><span class="metro-badge badge-harbour">Harbour</span><span class="metro-badge badge-railway">Indian Railways</span></td><td>9 October 2025</td><td>Underground</td></tr>
+                        <tr><td>24</td><td>Hutatma Chowk</td><td>-</td><td>9 October 2025</td><td>Underground</td></tr>
+                        <tr><td>25</td><td>Churchgate</td><td><span class="metro-badge badge-western">Western</span></td><td>9 October 2025</td><td>Underground</td></tr>
+                        <tr><td>26</td><td>Vidhan Bhavan</td><td>-</td><td>9 October 2025</td><td>Underground</td></tr>
+                        <tr><td>27</td><td>Cuffe Parade</td><td>-</td><td>9 October 2025</td><td>Underground</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-card">
+            <p class="footer-label">WD MINI PROJECT</p>
+            <div class="footer-team">
+                <p>N007 BRUCE ANDRADES</p>
+                <p>N015 HARSHIL BHATNAGAR</p>
+                <p>N031 DHRUV DHONDE</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="metro-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
